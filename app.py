@@ -22,6 +22,7 @@ from openinference.instrumentation.llama_index import LlamaIndexInstrumentor
 from phoenix.otel import register
 
 app = Flask(__name__)
+environ["OPENAI_API_KEY"] = "sk-svcacct-JtMLhV4TL44uR-6S8w2vsx6l4lSLeU_VEJvMnjZ-SLpp1UlP5Cc1gej7-TBDvQLT3BlbkFJVOwTraN-qNmkpY3Gk4Y-rLeCW5avRpejNTYAkCvOSTjwGk4hUQNeFThYwa9NkAA"
 
 # Route for the form page
 @app.route('/')
